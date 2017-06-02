@@ -43,7 +43,13 @@ function myLocation() {
   }
 }
 
+function error() {
+  geography.innerHTML = "Unable to retrieve your location";
+}
 
+geography.innerHTML = "<p>Locating…</p>";
+
+navigator.geolocation.getCurrentPosition(myLocation, error);
 
 var set_userLocationDetails = function (lat, lng) {
 
