@@ -1,5 +1,5 @@
 body {
-   background : black;
+   background : lightblue;
    font-family: monospace;
   color: white;
 }
@@ -15,9 +15,72 @@ body {
   flex-basis: 50%;
 }
 
+#innerWeather{
+  display:block;
+}
+
+/* LOADER STARTS */
+#loader {
+
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+ margin: 45vh auto 0;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top: 10px solid lightgrey;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
 
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+  max-width: 300px;
+ margin: 30vh auto 30vh;
+border-style: solid;
+border-color: white;
+border-spacing: 10px;
+
+
+}
+
+#newloc{
+  margin-bottom: 16.185px;
+}
+
+/* LOADER ends */
 
 /* Inspired by Animated Weather Icons by Josh Bader */
 

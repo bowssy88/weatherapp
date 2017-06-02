@@ -7,13 +7,13 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body onload="myFunction()" >
 
-  <section id="currentWeather">
-    <div class="weatherapp">
+<div id="loader"></div>
+  <section id="myDiv">
+
+<div id="innerWeather">
       <h1> Weather</h1>
-
-
 
     <!--Current-->
 
@@ -108,7 +108,7 @@
       <p> </p>
     </div>
 
-  </div>
+</div>
 </section>
 
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDEhpkDVbEshjjB6tPKdF_ID6AIOPjsMl0"></script>

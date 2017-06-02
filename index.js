@@ -1,8 +1,23 @@
+
+
 myLocation();
 
 var getLocation = new XMLHttpRequest();
 var geography = document.getElementById("location");
 
+
+
+
+function myFunction() {
+  var myVar;/// this section is to display the loader
+    myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loader").style.display = "none";
+}
 
 function myLocation() {
   if (navigator.geolocation) {
@@ -23,9 +38,11 @@ function myLocation() {
     });
 
   } else {
+    console.log(geography);
     geography.innerHTML = "Location Tracking not Possible.";
   }
 }
+
 
 
 var set_userLocationDetails = function (lat, lng) {
