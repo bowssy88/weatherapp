@@ -15,6 +15,8 @@ body {
   flex-basis: 50%;
 }
 
+
+
 #innerWeather{
   display:block;
 }
@@ -25,12 +27,12 @@ body {
   z-index: 1;
   width: 150px;
   height: 150px;
- margin: 45vh auto 0;
-  border: 10px solid white;
+ margin: 40vh auto 0;
+  border: 10px solid lightgrey;
   border-radius: 50%;
-  border-top: 10px solid lightgrey;
-  width: 100px;
-  height: 100px;
+  border-top: 10px solid white;
+  width: 170px;
+  height: 170px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -65,10 +67,11 @@ body {
 }
 
 #myDiv {
+
   display: none;
   text-align: center;
   max-width: 300px;
- margin: 30vh auto 30vh;
+margin: 30vh auto 30vh;
 border-style: solid;
 border-color: white;
 border-spacing: 10px;
